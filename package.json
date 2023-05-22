@@ -1,5 +1,5 @@
 {
-  "name": "task-2",
+  "name": "yes",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -37,5 +37,9 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
     "typescript": "~5.0.2"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }

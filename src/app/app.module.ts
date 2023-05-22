@@ -17,13 +17,19 @@ import { MatSelectModule } from '@angular/material/select';
 import { HttpClientModule } from '@angular/common/http';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { AlertComponent } from './alert/alert.component';
+import { HomeComponent } from './home/home.component';
+import { ApiService } from './shared/api.service';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    AlertComponent,
     ListComponent,
-    AddeditUserComponent
+    AddeditUserComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -40,10 +46,11 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatSelectModule,
     HttpClientModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    RouterModule
 
   ],
-  providers: [],
+  providers: [ApiService,HttpClientModule ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
